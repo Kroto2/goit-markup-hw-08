@@ -1,0 +1,40 @@
+/* colors*/
+$primary-color: #fff;
+$primary-text: #757575;
+$logo-color: #000;
+$border: #eeeeee;
+$border-color: #21212133;
+$header-line: #ececec;
+$secondary-text: #212121;
+$hover-text: #2196f3;
+$background-card: #f5f4fa;
+$background-footer: #2f303a;
+$background-mix: #2f303a66;
+$background-outside: #e5e5e5;
+$icon-background: #afb1b8;
+$footer-link: #ffffff99;
+$footer-icon: #ffffff1a;
+$background-backdrop: #00000033;
+$placeholder-text: #75757580;
+/*fonts*/
+$standard-font: "Roboto", sans-serif;
+$logo-font: "Raleway", sans-serif;
+$font-size: (
+    "standard": 14px,
+    "enlarged": 16px,
+    "cardheader": 18px,
+    "section-header": 36px,
+    "logo-font": 26px,
+    "main-text": 44px,
+);
+$font-weight: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+    "extrabold": 900,
+);
+$letter-spacing: (
+    "standard": 0.03em,
+    "header": 0.06em,
+    "links": 0.02em,
+);

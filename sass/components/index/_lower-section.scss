@@ -1,0 +1,39 @@
+.lower-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__header {
+        font-size: map-get($font-size, section-header);
+        color: $secondary-text;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+        gap: 30px;
+        padding-left: 0;
+    }
+
+    &__figure {
+        height: 294px;
+        width: 370px;
+        margin: 0;
+    }
+
+    &__description {
+        color: $primary-color;
+        font-weight: map-get($font-weight, bold);
+        background-color: #2f303acc;
+        height: 70px;
+        text-align: center;
+        position: relative;
+        padding: 27px 0;
+        top: -72px;
+    }
+}

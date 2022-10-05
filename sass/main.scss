@@ -1,0 +1,19 @@
+@import "./utils/variables";
+@import "./components/header";
+@import "./components/index-main";
+@import "./components/footer";
+@import "./components/portfolio-main";
+
+body {
+    background-color: $primary-color;
+    color: $primary-text;
+    font-size: map-get($font-size, standard);
+    letter-spacing: map-get($letter-spacing, standard);
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.section {
+    margin: 94px 0 94px 0;
+}
