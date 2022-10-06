@@ -11,8 +11,22 @@ body {
     letter-spacing: map-get($letter-spacing, standard);
 }
 .container {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+
+        margin: 0 auto;
+    }
 }
 .section {
     margin: 94px 0 94px 0;
