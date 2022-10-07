@@ -91,12 +91,14 @@
             font-size: 34px;
             font-weight: map-get($font-weight, medium);
             color: $hover-text;
+            text-decoration: none;
         }
 
         &-email {
             font-size: 24px;
             font-weight: map-get($font-weight, medium);
             color: $primary-text;
+            text-decoration: none;
         }
     }
 

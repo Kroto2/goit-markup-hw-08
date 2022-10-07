@@ -23,7 +23,7 @@
     }
 
     &__header {
-        font-size: map-get($font-size, main-text);
+        font-size: 26px;
         color: $primary-color;
         letter-spacing: map-get($letter-spacing, header);
         font-weight: map-get($font-weight, extrabold);
