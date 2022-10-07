@@ -33,6 +33,11 @@
                         </svg>
                     +48 111 111 111</a></li>
                 </ul>
+                <button class="header__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">X
+                  <!-- <svg class="header__button--mobile-menu">
+                                    <use xlink:href="" width="24" height="16"></use>
+                                </svg> -->
+                </button>
         </header>
         <div class="header-border"></div>
         <main>
@@ -61,7 +66,7 @@
                               </p>
                             </div>
                           </div>
-                        <img src="./images/Porftolio1.jpg" alt="Making a difference" width="370" height="294" />
+                        <img class="products__picture" src="./images/Porftolio1.jpg" alt="Making a difference" width="370" height="294" />
                         <h4 class="products__header">Technocrack</h4>
                         <p class="products__label">Strona internetowa</p>
                     </li>
@@ -78,7 +83,7 @@
                               </p>
                             </div>
                           </div>
-                        <img src="./images/Portfolio2.jpg" alt="Guys playin basketball" width="370" height="294"/>
+                        <img class="products__picture" src="./images/Portfolio2.jpg" alt="Guys playin basketball" width="370" height="294"/>
                         <h4 class="products__header">Grafika New Orlean vs Golden Star</h4>
                         <p class="products__label">Dizajn</p>
                     </li>
@@ -95,7 +100,7 @@
                               </p>
                             </div>
                           </div>
-                        <img src="./images/Portfolio3.jpg" alt="Banner of a seafood restaurant" width="370" height="294"/>
+                        <img class="products__picture" src="./images/Portfolio3.jpg" alt="Banner of a seafood restaurant" width="370" height="294"/>
                         <h4 class="products__header">Restauracja Seafood</h4>
                         <p class="products__label">Aplikacja</p>
                     </li>
@@ -112,7 +117,7 @@
                               </p>
                             </div>
                           </div>
-                        <img src="./images/Portfolio4.jpg" alt="Picture of headphones" width="370" height="294"/>
+                        <img class="products__picture" src="./images/Portfolio4.jpg" alt="Picture of headphones" width="370" height="294"/>
                         <h4 class="products__header">Projekt Prime</h4>
                         <p class="products__label">Marketing</p>
                     </li>
@@ -129,7 +134,7 @@
                               </p>
                             </div>
                           </div>
-                        <img src="./images/Portfolio5.jpg" alt="Picture of two boxes" width="370" height="294"/>
+                        <img class="products__picture" src="./images/Portfolio5.jpg" alt="Picture of two boxes" width="370" height="294"/>
                         <h4 class="products__header">Projekt Boxes</h4>
                         <p class="products__label">Aplikacja</p>
                     </li>
@@ -146,7 +151,7 @@
                               </p>
                             </div>
                           </div>
-                        <img src="./images/Portfolio6.jpg" alt="Motivational quote display on a screen" width="370" height="294"/>
+                        <img class="products__picture" src="./images/Portfolio6.jpg" alt="Motivational quote display on a screen" width="370" height="294"/>
                         <h4 class="products__header">Inspiration has no Borders</h4>
                         <p class="products__label">Strona internetowa</p>
                     </li>
@@ -163,7 +168,7 @@
                               </p>
                             </div>
                           </div>
-                        <img src="./images/Portfolio7.jpg" alt="Picture of a magazine" width="370" height="294"/>
+                        <img class="products__picture" src="./images/Portfolio7.jpg" alt="Picture of a magazine" width="370" height="294"/>
                         <h4 class="products__header">Magazyn Limited Edition</h4>
                         <p class="products__label">Dizajn</p>
                     </li>
@@ -180,11 +185,11 @@
                               </p>
                             </div>
                           </div>
-                        <img src="./images/Portfolio8.jpg" alt="Picture of a label tag" width="370" height="294"/>
+                        <img class="products__picture" src="./images/Portfolio8.jpg" alt="Picture of a label tag" width="370" height="294"/>
                         <h4 class="products__header">Projekt LAB</h4>
                         <p class="products__label">Marketing</p>
                     </li>
-                    <li  class="products__card">
+                    <li class="products__card">
                         <div class="description-hidden">
                             <div class="description-visable">
                               <p>
@@ -197,7 +202,7 @@
                               </p>
                             </div>
                           </div>
-                        <img src="./images/Portfolio9.jpg" alt="Picutre of a man typing sth on his laptop" width="370" height="294"/>
+                        <img class="products__picture" src="./images/Portfolio9.jpg" alt="Picutre of a man typing sth on his laptop" width="370" height="294"/>
                         <h4 class="products__header">Growing Business</h4>
                         <p class="products__label">Aplikacja</p>
                     </li>
@@ -270,5 +275,35 @@
                 </button>
         </div>
     </footer>
+    <div class="mobile js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">X
+        <!-- <svg class="mobile__exit">
+                    <use xlink:href="" width="18.67" height="18.67">
+                    </use>
+                </svg> -->
+      </button>
+    
+      <ul class="mobile__menu">
+        <li><a href="./index.html" class="mobile__menu-link">Agencja</a></li>
+        <li><a href="./portfolio.html" class="mobile__menu-link">Portfolio</a></li>
+        <li><a href="./contacts.html" class="mobile__menu-link">Kontakty</a></li>
+      </ul>
+      <div class="mobile__links">
+        <ul class="mobile__contacts">
+          <li><a href="tel:+48111111111" class="mobile__contacts-phone">+48 111 111 111</a></li>
+          <li><a href="mailto:info@devstudio.com" class="mobile__contacts-email">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile__socials">
+          <li><a href="https://instagram.com" class="mobile__socials-link">Instagram</a></li>
+          <li class="mobile__socials-link">|</li>
+          <li><a href="https://twitter.com" class="mobile__socials-link">Twitter</a></li>
+          <li class="mobile__socials-link">|</li>
+          <li><a href="https://facebook.com" class="mobile__socials-link">Facebook</a></li>
+          <li class="mobile__socials-link">|</li>
+          <li><a href="https://linkedin.com" class="mobile__socials-link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

@@ -1,13 +1,28 @@
+.mobile-hidden {
+    display: none;
+}
+@media(min-width:768){
+.mobile-hidden {
+    display: none;
+}
+}
+
+@media(min-width:1200px){
+.mobile-hidden{
+    display: flex;
+    justify-content: center;
+}
 .lower-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 
     &__header {
         font-size: map-get($font-size, section-header);
         color: $secondary-text;
         text-align: center;
+        margin-top: 0%;
     }
 
     &__list {
@@ -36,4 +51,5 @@
         padding: 27px 0;
         top: -72px;
     }
+}
 }
