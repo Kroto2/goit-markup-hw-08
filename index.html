@@ -293,7 +293,7 @@
                 <ul class="client-section__icons">
                     <li>
                     <svg class="client-section__icon" width="170" height="92">
-                        <use xlink:href="./images/icons.svg#icon-client-1"
+                        <use class="client-section__svg"  xlink:href="./images/icons.svg#icon-client-1"
                         width="106"
                         height="60"
                         x="32"
@@ -302,7 +302,7 @@
                     </li>
                     <li>
                     <svg class="client-section__icon" width="170" height="92">
-                        <use xlink:href="./images/icons.svg#icon-client-2"
+                        <use class="client-section__svg"  xlink:href="./images/icons.svg#icon-client-2"
                         width="106"
                         height="60"
                         x="32"
@@ -311,7 +311,7 @@
                     </li>
                     <li>
                     <svg class="client-section__icon" width="170" height="92">
-                        <use xlink:href="./images/icons.svg#icon-client-3"
+                        <use class="client-section__svg"  class="client-section__svg" xlink:href="./images/icons.svg#icon-client-3"
                         width="106"
                         height="60"
                         x="32"
@@ -320,7 +320,7 @@
                     </li>
                     <li>
                     <svg class="client-section__icon" width="170" height="92">
-                        <use xlink:href="./images/icons.svg#icon-client-4"
+                        <use class="client-section__svg"  xlink:href="./images/icons.svg#icon-client-4"
                         width="106"
                         height="60"
                         x="32"
@@ -329,7 +329,7 @@
                     </li>
                     <li>
                     <svg class="client-section__icon" width="170" height="92">
-                        <use xlink:href="./images/icons.svg#icon-client-5"
+                        <use class="client-section__svg"  xlink:href="./images/icons.svg#icon-client-5"
                         width="106"
                         height="60"
                         x="32"
@@ -338,7 +338,7 @@
                     </li>
                     <li>
                     <svg class="client-section__icon" width="170" height="92">
-                        <use xlink:href="./images/icons.svg#icon-client-6"
+                        <use class="client-section__svg"  xlink:href="./images/icons.svg#icon-client-6"
                         width="106"
                         height="60"
                         x="32"
@@ -422,6 +422,7 @@
             <h6 class="modal__header">Zostaw swoje dane w formularzu poniżej</h6>
             <label for="users-name" class="modal__hover">
                 Imie
+                <div class="modal__forms">
                 <svg class="modal__icon modal__icon--position1">
                     <use xlink:href="./images/icons.svg#icon-person"
                     width="12"
@@ -429,9 +430,11 @@
                     ></use>
                 </svg>
                 <input name="user-name" type="text" class="modal__input" id="users-name"/>
+            </div>
             </label>
             <label for="phone-number" class="modal__hover">
                 Telefon
+                <div class="modal__forms">
                 <svg class="modal__icon modal__icon--position2">
                     <use xlink:href="./images/icons.svg#icon-phone"
                     width="13"
@@ -439,9 +442,11 @@
                 </use>
                 </svg>
                 <input type="tel" name="phone-number" class="modal__input" id="phone-number"/>
+            </div>
             </label>
             <label for="email" class="modal__hover">
                 Email
+                <div class="modal__forms">
                 <svg class="modal__icon modal__icon--position3">
                     <use xlink:href="./images/icons.svg#icon-email"
                     width="15"
@@ -449,11 +454,15 @@
                     </use>
                 </svg>
                 <input type="email" name="email" class="modal__input" id="email"/>
+            </div>
             </label>
             <label class="modal__hover">Komentarz
+                <div class="modal__forms">
                 <textarea name="comment" placeholder="Wprowadź tekst" class="modal__input modal__comment"></textarea>
+            </div>
             </label>
             <label class="modal__terms-of">
+                <div class="modal__forms--tick">
                 <input type="checkbox"/>
                 <svg class="modal__checkmark">
                     <use xlink:href="./images/icons.svg#icon-tick"
@@ -466,6 +475,7 @@
                 <span class="modal__check-text"></span> Oświadczam iż akceptuję
                 <a href="#" class="modal__link">Regulamin</a> i
                 <a href="#" class="modal__link">Politykę Prywatności.</a>
+            </div>
             </label>
             <label>
                 <button type="submit" class="modal__submit-button">Wyślij</button>

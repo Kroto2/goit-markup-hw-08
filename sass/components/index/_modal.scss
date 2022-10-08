@@ -18,8 +18,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    max-width: 450px;
     min-height: 581px;
+    width: 100%;
     color: $primary-text;
     background-color: $primary-color;
     align-items: center;
@@ -54,7 +55,11 @@
         line-height: 1.172;
         margin: 40px 0 20px 0;
         text-align: center;
-        width: 370px;
+        max-width: 370px;
+    }
+    
+    &__hover{
+        width: 90%;
     }
 
     &__hover:hover>.modal__input,
@@ -69,8 +74,18 @@
     fill: $hover-text;
     }
 
+    &__forms{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        &--tick{
+            flex-wrap: wrap;
+        }
+    }
+
     &__input{
-        width: 370px;
+        width: 100%;
         height: 40px;
         display: block;
         margin: 4px 0 0 0;
@@ -83,7 +98,6 @@
 
     &__comment{
         resize: none;
-        width: 370px;
         height: 120px;
         padding: 12px 16px;
         border-radius: 4px;
@@ -98,6 +112,9 @@
     &__terms-of{
         font-size: 12px;
         padding: 10px 0 20px 0;
+        flex-wrap: wrap;
+        margin-left: 30px;
+        align-items: center;
 
         & input{
             position: absolute;
@@ -121,10 +138,10 @@
         width: 16px;
         height: 15px;
         position: absolute;
-        left: 35px;
-        top: 476px;
         z-index: 999;
         border-radius: 3px;
+        margin-right: 5px;
+        margin-left: -20px;
     }
 
     &__check-text{
@@ -132,11 +149,11 @@
         border: $secondary-text 2px solid;
         position: absolute;
         cursor: pointer;
-        top: 476px;
-        left: 35px;
         width: 16px;
         height: 15px;
         border-radius: 3px;
+        flex-wrap: wrap;
+        margin-left: -20px;
     
          &:after {
             content: "";
@@ -166,17 +183,17 @@
 
         &--position1 {
             top: 149px;
-            left: 52px;
+            margin-left: 13px;
         }
         
             &--position2 {
             top: 218px;
-            left: 52px;
+            margin-left: 13px;
         }
         
             &--position3 {
             top: 285px;
-            left: 52px;
+            margin-left: 13px;
          }
     }
 
@@ -191,6 +208,7 @@
         font-size: 16px;
         cursor: pointer;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-bottom: 40px;
 
         &:hover,
         &:focus,
@@ -198,8 +216,7 @@
             background-color: #135a91;
         }
     }
-    
-}
+}   
 @media(min-width:768px){
 .modal {
     position: absolute;
@@ -258,7 +275,6 @@
     }
 
     &__input {
-        width: 370px;
         height: 40px;
         display: block;
         margin: 4px 0 0 0;
@@ -271,7 +287,6 @@
 
     &__comment {
         resize: none;
-        width: 370px;
         height: 120px;
         padding: 12px 16px;
         border-radius: 4px;
@@ -309,8 +324,6 @@
         width: 16px;
         height: 16px;
         position: absolute;
-        left: 35px;
-        top: 476px;
         z-index: 999;
         border-radius: 3px;
     }
@@ -320,8 +333,6 @@
         border: $secondary-text 2px solid;
         position: absolute;
         cursor: pointer;
-        top: 476px;
-        left: 35px;
         width: 16px;
         height: 16px;
         border-radius: 3px;
@@ -354,17 +365,14 @@
 
         &--position1 {
             top: 149px;
-            left: 52px;
         }
 
         &--position2 {
             top: 218px;
-            left: 52px;
         }
 
         &--position3 {
             top: 285px;
-            left: 52px;
         }
     }
 
@@ -395,7 +403,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
+    min-width:528px ;
     min-height: 581px;
     color: $primary-text;
     background-color: $primary-color;
@@ -446,7 +454,6 @@
     }
 
     &__input {
-        width: 448px;
         height: 40px;
         display: block;
         margin: 4px 0 0 0;
@@ -459,7 +466,6 @@
 
     &__comment {
         resize: none;
-        width: 448px;
         height: 120px;
         padding: 12px 16px;
         border-radius: 4px;
@@ -497,8 +503,6 @@
         width: 16px;
         height: 16px;
         position: absolute;
-        left: 45px;
-        top: 454px;
         z-index: 999;
         border-radius: 3px;
     }
@@ -508,8 +512,6 @@
         border: $secondary-text 2px solid;
         position: absolute;
         cursor: pointer;
-        top: 454px;
-        left: 45px;
         width: 16px;
         height: 16px;
         border-radius: 3px;
@@ -539,21 +541,6 @@
         height: 13px;
         position: absolute;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        &--position1 {
-            top: 125px;
-            left: 52px;
-        }
-
-        &--position2 {
-            top: 194px;
-            left: 52px;
-        }
-
-        &--position3 {
-            top: 260px;
-            left: 52px;
-        }
     }
 
     &__submit-button {
