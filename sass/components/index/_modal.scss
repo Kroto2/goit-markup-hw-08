@@ -47,7 +47,10 @@
             background-color:$primary-text;
         }
     }
-
+    &__hover{
+        width: 90%;
+    }
+    
     &__header {
         color: $secondary-text;
         font-size: 20px;
@@ -58,19 +61,16 @@
         max-width: 370px;
     }
     
-    &__hover{
-        width: 90%;
-    }
 
-    &__hover:hover>.modal__input,
-    &__hover:focus>.modal__input {
+    &__forms:hover>.modal__input,
+    &__forms:focus>.modal__input {
         border: $hover-text 1px solid;
         box-shadow: none;
         outline: none;
     }
     
-    &__hover:hover>.modal__icon,
-    &__hover:focus>.modal__icon {
+    &__forms:hover>.modal__icon,
+    &__forms:focus>.modal__icon {
     fill: $hover-text;
     }
 
@@ -262,15 +262,15 @@
         text-align: center;
     }
 
-    &__hover:hover>.modal__input,
-    &__hover:focus>.modal__input {
+    &__forms:hover>.modal__input,
+    &__forms:focus>.modal__input {
         border: $hover-text 1px solid;
         box-shadow: none;
         outline: none;
     }
 
-    &__hover:hover>.modal__icon,
-    &__hover:focus>.modal__icon {
+    &__forms:hover>.modal__icon,
+    &__forms:focus>.modal__icon {
         fill: $hover-text;
     }
 
@@ -441,15 +441,15 @@
         width: 100%;
     }
 
-    &__hover:hover>.modal__input,
-    &__hover:focus>.modal__input {
+    &__forms:hover>.modal__input,
+    &__forms:focus>.modal__input {
         border: $hover-text 1px solid;
         box-shadow: none;
         outline: none;
     }
 
-    &__hover:hover>.modal__icon,
-    &__hover:focus>.modal__icon {
+    &__forms:hover>.modal__icon,
+    &__forms:focus>.modal__icon {
         fill: $hover-text;
     }
 
